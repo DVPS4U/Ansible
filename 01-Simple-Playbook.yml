@@ -1,5 +1,5 @@
  -name: Playbook Demo
-  hosts: inv
+  hosts: all
   tasks:
     -name: Task1
     ansible.builtin.debug:
