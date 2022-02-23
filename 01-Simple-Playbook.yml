@@ -1,5 +1,5 @@
 name: Demo On Sample Playbook
-  hosts: inv
+hosts: all
   tasks:
     ansible.builtin.debug:
       msg: Hello From playbook
