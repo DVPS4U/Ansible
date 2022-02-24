@@ -1,5 +1,6 @@
--name: Demo On Playbook
- hosts: 172.31.90.42
+- name: Demo On Playbook
+ hosts: all
  tasks:
-  -ansible.builtin.debug:
- msg: Hello From playbook
+  - name:
+     ansible.builtin.debug:
+      msg: Hello From playbook
