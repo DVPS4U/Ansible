@@ -1,4 +1,4 @@
-  name: Demo On Sample Playbook
+- name: Demo On Sample Playbook
   hosts: all
   tasks:
    ansible.builtin.debug:
