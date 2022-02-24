@@ -1,4 +1,4 @@
- hosts: inv
+- hosts: inv
    tasks:
-    ansible.builtin.debug:
-    msg: Hello From playbook
+    - ansible.builtin.debug:
+        msg: Hello From playbook
