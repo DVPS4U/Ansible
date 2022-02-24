@@ -1,5 +1,5 @@
-  hosts: all
-  tasks:
-   - name:
+   hosts: all
+   tasks:
+    - name:
      ansible.builtin.debug:
       msg: Hello From playbook
