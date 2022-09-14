@@ -1,5 +1,5 @@
 - name: Demo on Simple playbook
-  hosts: 172.31.81.136
+  hosts: all
   tasks:
   - name: Task1
     ansible.builtin.debug:
