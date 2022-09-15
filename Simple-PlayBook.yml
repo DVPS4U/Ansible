@@ -1,5 +1,7 @@
 - name: Demo on Simple playbook
   hosts: all
+  vars:
+    a: 10
   tasks:
   - name: Task1
     ansible.builtin.debug:
@@ -7,4 +9,4 @@
 
   - name: Task2
     ansible.builtin.debug:
-      msg: "new message"
+      msg: "new message {{a}}"
