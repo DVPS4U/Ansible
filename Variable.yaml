@@ -8,4 +8,4 @@
     - name: Print a value
       ansible.builtin.debug:
         msg: URL - {{url}}
-        add: A+B - {{a}}+{{b}}
+             A+B - {{a}}+{{b}}
