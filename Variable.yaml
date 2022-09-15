@@ -6,6 +6,6 @@
     - name: Print a value
       hosts: all
       vars:
-        url: example.com
+      url: example.com
       ansible.builtin.debug:
         msg: URL - {{url}}
