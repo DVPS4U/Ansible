@@ -2,7 +2,10 @@
   hosts: all
   vars:
    url: example.com
+   a: 15
+   b: 15
   tasks:
     - name: Print a value
       ansible.builtin.debug:
         msg: URL - {{url}}
+        add: A+B - {{a}}+{{b}}
