@@ -11,7 +11,9 @@
              A+B - {{a}}+{{b}}
 - name: Play for command line variables
   hosts: all
+  vars:
+   url:
   tasks:
-    - name: Play for command line variable
+    - name: Print the url
       ansible.builtin.debug:
         mmg: URL - {{url}}
