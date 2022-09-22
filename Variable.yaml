@@ -9,3 +9,9 @@
       ansible.builtin.debug:
         msg: URL - {{url}}
              A+B - {{a}}+{{b}}
+- name: Play for command line variable
+  hosts: all
+  tasks:
+    - name: Play for command line variable
+      ansible.builtin.debug:
+        mmg: URL - {{url}}
