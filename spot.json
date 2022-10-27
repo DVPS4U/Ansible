@@ -1,4 +1,5 @@
 {
-  "LaunchTemplateId": "05589047b6c5587a2",
-  "Version": "4"
+  "ImageId": "ami-0bb6af715826253bf",
+  "SecurityGroupIds": [ "sg-061abb0ec1a6e0d28" ],
+  "InstanceType": "t3.micro"
 }
