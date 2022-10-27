@@ -2,5 +2,7 @@
 
 #1. Create a Spot Instance
 #2. Take that Instance IP & register DNS
+#L_ID: "05589047b6c5587a2"
+#Version: 4
 
-aws ec2 request-spot-instances  --instance-count 1 --type "persistent" --launch-specification file://spot.json --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=Frontend}]" "ResourceType=instance,Tags=[{Key=Name,Value=Frontend}]"
+aws ec2 run-instances  --launch-template  --launch-specification file://spot.json --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=Frontend}]" "ResourceType=instance,Tags=[{Key=Name,Value=Frontend}]"
